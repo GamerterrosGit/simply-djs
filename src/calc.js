@@ -21,7 +21,7 @@ async function calculator(message, options = []) {
     if (options.credit === false) {
         foot = options.embedFoot || 'Calculator'
     } else {
-        foot = '©️ Simply Develop. npm i simply-djs'
+        foot = options.embedFoot || 'Calculator'
     }
 
     const emb = new Discord.MessageEmbed()
@@ -41,7 +41,7 @@ async function calculator(message, options = []) {
         if (options.credit === false) {
             foot = options.embedFoot || 'Make sure to win ;)'
         } else {
-            foot = '©️ Simply Develop. npm i simply-djs'
+            foot = options.embedFoot || 'Make sure to win ;)'
         }
 
         let emb1 = new Discord.MessageEmbed()
